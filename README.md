@@ -22,21 +22,21 @@ Set up virtualenv and install Django
 
  Find a directory in which you want to create the virtualenv; your home directory, for example. On Windows it might look like C:\Users\Name\ (where Name is the name of your login).
  
- NOTE: On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example C:\vconnectweb
+ NOTE: On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example C:\libraryPortal
  
  
- Create a new directory vconnect-web from your home directory:
+ Create a new directory libraryPortal from your home directory:
 
 command-line
     
-    $ mkdir vconnectweb
-    $ cd vconnectweb
+    $ mkdir libraryPortal
+    $ cd libraryPortal
 
 #Windows
 
 command-line
     
-    C:\Users\Name\vconnectweb> C:\Python35\python -m venv myvenv
+    C:\Users\Name\libraryPortal> C:\Python35\python -m venv myvenv
 
 where C:\Python35\python is the directory in which you previously installed Python and myvenv is the name of your virtualenv. 
 You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short.
@@ -51,7 +51,7 @@ You can use any other name, but stick to lowercase and use no spaces, accents or
 Start your virtual environment by running:
 
 
-    C:\Users\Name\vconnectweb> myvenv\Scripts\activate
+    C:\Users\Name\libraryPortal> myvenv\Scripts\activate
     
 NOTE: on Windows 10 you might get an error in the Windows PowerShell says execution of scripts is disabled on this system. In those cases open another Windows PowerShell and Run as Administrator try doing this before continue:
 
@@ -76,13 +76,14 @@ Start your virtual environment by running:
     
     
 ###On Windows
-If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, C:\Users\User Name\vconnectweb). If it does, please consider using another place without spaces, accents or special characters (suggestion: C:\vconnectweb). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, C:\Users\User Name\libraryPortal). If it does, please consider using another place without spaces, accents or special characters (suggestion: C:\libraryPortal). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 ###on Windows 8 and Windows 10
 
 Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+Or you could use PowerShell instead of command prompt
 
-    C:\Users\Name\vconnectweb> python -m pip install django~=1.9.0
+    C:\Users\Name\libraryPortal> python -m pip install django~=1.9.0
 
 
 # Fork and Clone the repo and start contributing 
