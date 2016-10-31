@@ -255,7 +255,7 @@
 				<form action="{% url 'member_login' %}" method="post">
 				   {%  csrf_token  %} 
 					<input type="text" class="login-user" placeholder="Username" name="username"><br><br>
-				 <input type="password" class="login-user" placeholder="Password" name="password"><br><br>
+				 <input type="text" class="login-user" placeholder="Password" name="password"><br><br>
 				 
 				   	<input type="submit" class="login-submit" placeholder="Username" name="submit" value="Login">
 				</form>
