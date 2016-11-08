@@ -64,6 +64,7 @@ AUTHENTICATION_BACKENDS = (
 
 
 
+
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -145,6 +146,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+LOGIN_REDIRECT_URL = '/'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '1670330549945426'
+
+SOCIAL_AUTH_FACEBOOK_SECRET = '4151742a9a581dff2e2b969eb002c6de'
+
 
 
 import dj_database_url
