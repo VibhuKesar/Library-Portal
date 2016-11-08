@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Tasks,Student,User
+from .models import Tasks,Student,User, Resources
 from django.contrib import admin
 
 admin.site.site_title = 'ACE VIRTUAL LIBRARY'
@@ -30,3 +30,5 @@ class AceAdmin(admin.ModelAdmin):
 admin.site.register(User)
 admin.site.register(Tasks)
 admin.site.register(Student)
+admin.site.register(Resources)
+

@@ -69,15 +69,22 @@ class Events(models.Model):
 
 
 
-'''
+
 class Resources(models.Model):
 
     #category,url,topic,description 
+    course = models.CharField(max_length=30)  
+    couse_diff = models.CharField(max_length=10)
+    couse_des = models.TextField(max_length=50)
+    link = models.CharField(max_length=50)
+    course_type =models.CharField(max_length=20)
+    course_author = models.CharField(max_length=30)
+    approval_status = models.BooleanField(default=False)
 
 
 
 
-
+'''
 class Attendance(models.Model):
 
     #user_id(foreign key),#event_id(foreign key), attendance(String)
